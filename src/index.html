@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+            <div class="header__basket">
+                <div class="header__icon">
+                <svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.07073 18.0344L9.14146 17.8903L10.0758 15.9872L10.1032 15.9314L10.1654 15.9313L25.6904 15.9031L25.6906 15.9031C26.1672 15.9031 26.5757 15.5628 26.6609 15.0918L9.07073 18.0344ZM9.07073 18.0344H9.23123H27.8405C28.1064 18.0345 28.3614 18.1398 28.5499 18.3273C28.7384 18.5147 28.8451 18.7689 28.8468 19.0347C28.8467 19.5885 28.3948 20.0375 27.8437 20.0375H24.3031H24.1038L24.2229 20.1973C24.6229 20.7335 24.8468 21.3908 24.8468 22.0656C24.8468 23.7791 23.4541 25.1719 21.7406 25.1719C20.0271 25.1719 18.6343 23.7791 18.6343 22.0656V22.0655C18.6338 21.3917 18.8527 20.736 19.258 20.1976L19.3786 20.0375H19.1781H14.1437H13.9444L14.0636 20.1973C14.4635 20.7335 14.6875 21.3908 14.6875 22.0656C14.6875 23.7791 13.2947 25.1719 11.5812 25.1719C9.8677 25.1719 8.47498 23.7791 8.47498 22.0656V22.0655C8.47438 21.3917 8.69331 20.736 9.09861 20.1976L9.21919 20.0375H9.01873H7.05623C6.67537 20.0375 6.33171 19.8245 6.16115 19.4862L6.16078 19.4855C6.07607 19.3208 6.03915 19.1356 6.0542 18.951C6.06925 18.7664 6.13567 18.5896 6.24595 18.4408L6.24626 18.441L6.25087 18.4335L8.58837 14.6179L8.60903 14.5841L8.60103 14.5454L6.78541 5.75477L6.78533 5.75442L6.04783 2.24817L6.03113 2.16875H5.94998H2.0156C1.74956 2.16875 1.49441 2.06306 1.30628 1.87494C1.11816 1.68682 1.01248 1.43167 1.01248 1.16563C1.01248 0.89958 1.11816 0.644431 1.30628 0.456308C1.49441 0.268186 1.74956 0.1625 2.0156 0.1625H6.84373C7.31547 0.1625 7.73064 0.498394 7.82711 0.95804L7.82716 0.958295L7.99591 1.75204L8.01269 1.83098L8.09339 1.83125L27.8431 1.89687C27.8432 1.89687 27.8432 1.89687 27.8433 1.89687C27.9873 1.89774 28.1294 1.92992 28.2598 1.99118C28.3902 2.05247 28.5058 2.14139 28.5984 2.25177C28.7853 2.47565 28.862 2.77059 28.8109 3.05745L26.6609 15.0916L9.07073 18.0344ZM8.55343 3.80625L8.42975 3.80584L8.45525 3.92686L10.5521 13.88L10.5689 13.9595L10.6502 13.9594L24.7845 13.9344L24.8681 13.9342L24.8828 13.852L26.6453 3.98321L26.6662 3.86602L26.5472 3.86563L8.55343 3.80625ZM10.4937 22.0656C10.4937 22.6646 10.9822 23.1531 11.5812 23.1531C11.8696 23.1531 12.1463 23.0385 12.3502 22.8346C12.5541 22.6307 12.6687 22.354 12.6687 22.0656C12.6687 21.4666 12.1802 20.9781 11.5812 20.9781C10.9822 20.9781 10.4937 21.4666 10.4937 22.0656ZM20.6531 22.0656C20.6531 22.6646 21.1416 23.1531 21.7406 23.1531C22.029 23.1531 22.3056 23.0385 22.5096 22.8346C22.7135 22.6307 22.8281 22.354 22.8281 22.0656C22.8281 21.4666 22.3396 20.9781 21.7406 20.9781C21.1416 20.9781 20.6531 21.4666 20.6531 22.0656Z" fill="#0069B4" stroke="white" stroke-width="0.2"/>
+                    </svg>                
+            </div>
+          
+            <div class="header__sum">
+                <div class="header__info">Ваша корзина</div>
+                <div class="header__info" id="total"> ед.товара</div>
+                <div class="header__info" id="sum"></div>
+            </div>
+
+        </div>
+       
+    </header>
+    <main class="main">
+        <div class="home">
+            <div class="home__text">Главная</div>
+            <button class="home__arrow">
+                <img src="icons/Vector 6.svg" alt="стрелочка">
+            </button>
+            
+            <div class="home__text2">Корзина</div>
+    
+        </div>
+        <div class="order">
+            <div class="order__amount">
+                <h1 class="order__text-main">
+                    Ваша корзина:
+                </h1>
+                <div class="order__text">
+                   ед.товара
+                </div>
+            </div>
+            <div class="order__cleaning-basket">
+                Очистить корзину
+            </div>
+        </div>
+        <section class="basket">
+            <div class="basket__dynamic">
+                <div class="basket__item">
+                    <div class="basket__img">
+                        <img src="img/Rectangle 72.png" alt="картинка">
+                    </div>
+                    <div class="basket__info">
+                        <h3 class="basket__header">Вытяжное устройство G2H</h3>
+                        <div class="basket__text">
+                            12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия
+                        </div>
+                        <div class="basket__indificator">Артикул: G2H1065</div>
+                    </div>
+                    <div class="basket__calc">
+                         <button class="basket__btn1">-</button>
+                         <div class="basket__amount">0</div>
+                         <button class="basket__btn2">+</button>
+                         <div class="basket__unity">12644₽/шт.</div>
+                    </div>
+                    <div class="basket__total">0₽</div>
+                    <div class="basket__close">
+                        <img src="icons/Group 455.svg" alt="крестик">
+                    </div>
+                </div>
+
+                <div class="basket__item">
+                    <div class="basket__img">
+                        <img src="img/Rectangle2.png" alt="картинка">
+                    </div>
+                    <div class="basket__info">
+                        <h3 class="basket__header">Вытяжное устройство BXC</h3>
+                        <div class="basket__text">
+                            12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия
+                        </div>
+                        <div class="basket__indificator">Артикул: G2H1065</div>
+                    </div>
+                    <div class="basket__calc">
+                         <button class="basket__btn1">-</button>
+                         <div class="basket__amount">0</div>
+                         <button class="basket__btn2">+</button>
+                         <div class="basket__unity">12644₽/шт.</div>
+                    </div>
+                    <div class="basket__total">0₽</div>
+                    <div class="basket__close">
+                        <img src="icons/Group 455.svg" alt="крестик">
+                    </div>
+                </div>
+
+                <div class="basket__item">
+                    <div class="basket__img">
+                        <img src="img/Rectangle3.png" alt="картинка">
+                    </div>
+                    <div class="basket__info">
+                        <h3 class="basket__header">Вытяжное устройство GHN</h3>
+                        <div class="basket__text">
+                            12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия
+                        </div>
+                        <div class="basket__indificator">Артикул: G2H1065</div>
+                    </div>
+                    <div class="basket__calc">
+                         <button class="basket__btn1">-</button>
+                         <div class="basket__amount">0</div>
+                         <button class="basket__btn2">+</button>
+                         <div class="basket__unity">12644₽/шт.</div>
+                    </div>
+                    <div class="basket__total">0₽</div>
+                    <div class="basket__close">
+                        <img src="icons/Group 455.svg" alt="крестик">
+                    </div>
+                </div>
+
+            </div>
+            <form action="#" class="total">
+                <h2 class="total__header">Итого</h2>
+                <div class="total__info">
+                    <div class="total__points">
+                         <div class="total__item">Сумма заказа</div>
+                         <div class="total__item">Колличество</div>
+                         <div class="total__item">Установка</div>
+                    </div>
+                    <div class="total__points">
+                         <div class="total__item2"id="sum1">0₽</div>
+                         <div class="total__item2" id="total2">шт</div>
+                         <div class="total__item2" id="checking">Нет</div>
+                    </div>              
+                </div>
+                <hr>
+                <div class="total__sum"> 
+                    <div class="total__cost">Стоимость товаров</div>
+                    <div class="total__right">0₽</div>
+                </div>
+                 <div class="total__btns">
+                    <button class="total__btn">Оформить заказ</button>
+                    <button class="total__btn">Купить в один клик</button>
+                 </div>
+               
+     
+             </form>
+        </section>
+
+        <section class="setting">
+            <input type="checkbox" class="setting__checkbox">
+            <div class="setting__img">
+                <img src="img/Group 564.svg" alt="картинка">
+            </div>
+            <div class="setting__info">
+                <h3 class="setting__header">Установка</h3>
+                <div class="setting__text">Отметьте, если Вам необходима консультация профессионала по монтажу выбранных товаров.
+                </div>
+            </div>
+            
+       </section>
+
+       <section class="product">
+            <h2 class="product__header">Просмотренные товары</h2>
+            <div class="product__arrow">
+                <div class="product__prev">
+                    <img src="icons/Group 21.svg" alt="стрелочка">
+                </div>
+                <div class="product__navigation">
+                   <span>1</span>/6
+                </div>
+                <div class="product__next">
+                    <img src="icons/Group 20.svg" alt="стрелочка">
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slider__wrapper">
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="img/Rectangle2.png" alt="картинка">
+                        </div>
+                        <div class="slider__title">
+                            BXC
+                        </div>
+                        <div class="slider__description">
+                            Вытяжное устройство для механической системы вентиляции
+                        </div>
+                        <div class="slider__price">
+                            6 848 ₽ – 56 584 ₽ 
+                        </div>
+                        <div class="slider__price2">
+                            77.60 € – 643.86 €
+                        </div>
+                        <button class="slider__btn">Подробнее</button>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="img/Rectangle 72.png" alt="картинка">
+                        </div>
+                        <div class="slider__title">
+                            G2H
+                        </div>
+                        <div class="slider__description">
+                            Многофункциональное вытяжное устройство для естественной и гибридной вентиляции
+                        </div>
+                        <div class="slider__price">
+                            6 848 ₽ – 56 584 ₽ 
+                        </div>
+                        <div class="slider__price2">
+                            77.60 € – 643.86 €
+                        </div>
+                        <button class="slider__btn">Подробнее</button>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="img/Rectangle3.png" alt="картинка">
+                        </div>
+                        <div class="slider__title">
+                            GHN
+                        </div>
+                        <div class="slider__description">
+                            Вытяжное устройство с датчиком присутствия
+                        </div>
+                        <div class="slider__price">
+                            6 848 ₽ – 56 584 ₽ 
+                        </div>
+                        <div class="slider__price2">
+                            77.60 € – 643.86 €
+                        </div>
+                        <button class="slider__btn">Подробнее</button>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="img/BXC-pre-mur-1-modif-BD-768x768 1.png" alt="картинка">
+                        </div>
+                        <div class="slider__title">
+                            TDA
+                        </div>
+                        <div class="slider__description">
+                            Вытяжное устройство для механической системы вентиляции
+                        </div>
+                        <div class="slider__price">
+                            6 848 ₽ – 56 584 ₽ 
+                        </div>
+                        <div class="slider__price2">
+                            77.60 € – 643.86 €
+                        </div>
+                        <button class="slider__btn">Подробнее</button>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="img/Rectangle2.png" alt="картинка">
+                        </div>
+                        <div class="slider__title">
+                            BXC
+                        </div>
+                        <div class="slider__description">
+                            Вытяжное устройство для механической системы вентиляции
+                        </div>
+                        <div class="slider__price">
+                            6 848 ₽ – 56 584 ₽ 
+                        </div>
+                        <div class="slider__price2">
+                            77.60 € – 643.86 €
+                        </div>
+                        <button class="slider__btn">Подробнее</button>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="img/Rectangle2.png" alt="картинка">
+                        </div>
+                        <div class="slider__title">
+                            BXC
+                        </div>
+                        <div class="slider__description">
+                            Вытяжное устройство для механической системы вентиляции
+                        </div>
+                        <div class="slider__price">
+                            6 848 ₽ – 56 584 ₽ 
+                        </div>
+                        <div class="slider__price2">
+                            77.60 € – 643.86 €
+                        </div>
+                        <button class="slider__btn">Подробнее</button>
+                    </div>
+
+                </div>
+            </div>
+            <script src="js/index.js"></script>
+       </section>
+       
+
+    </main>
+    
+</body>
+</html>
